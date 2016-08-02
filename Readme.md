@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
-* Студент: [Константин Куранаков](https://up.htmlacademy.ru/htmlcss/14/user/231773).
-* Наставник: `Шамиль Алисултанов`.
+* Студент: [Konstantin Kuranakov](https://up.htmlacademy.ru/htmlcss/14/user/231773).
+* Наставник: `Неизвестно`.
 
 ---
 
