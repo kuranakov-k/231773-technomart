@@ -7,8 +7,8 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
+<!-- header -->
 		<header class="main-header">
-
 			<div class="header-top container clearfix">
 				<a href="#"><img class="main-logo" src="" alt="main-logo" width="220" height="42"></a>
 				<form action="">
@@ -19,7 +19,6 @@
 				<a href="#" class="btn btn-cart btn-cart-full">Корзина: 0</a>
 				<a href="#" class="btn btn-purchase"></a>
 			</div>
-
 			<div class="header-middle container clearfix">
 				<p class="header-info">Интернет-магазин строительных материалов и инструментов для ремонта
 				</p>
@@ -35,18 +34,19 @@
 					</div>
 				</div>
 			</div>
-
 			<nav class="header-bottom container">
-				<a href="#">Главная</a>
-				<a href="#">Компания</a>
-				<a href="#">Каталог</a>
-				<a href="#">Новости</a>
-				<a href="#">Спецпредложения</a>
-				<a href="#">Доставка</a>
-				<a href="#">Контакты</a>
+				<ul>
+					<li><a class="menu-item menu-item-top" href="#">Главная</a></li>
+					<li><a class="menu-item menu-item-top" href="#">Компания</a></li>
+					<li><a class="menu-item menu-item-top" href="#">Каталог</a></li>
+					<li><a class="menu-item menu-item-top" href="#">Новости</a></li>
+					<li><a class="menu-item menu-item-top" href="#">Спецпредложения</a></li>
+					<li><a class="menu-item menu-item-top" href="#">Доставка</a>	</li>
+					<li><a class="menu-item menu-item-top" href="#">Контакты</a></li>
+				</ul>
 			</nav>
 		</header>
-
+<!-- main -->
 		<main class="container">
 			<ul class="breadcrumbs">
 				<li><a href="#">Каталог</a></li>
@@ -55,11 +55,10 @@
 			</ul>
 			<h1 class="catalog-title">Перфораторы</h1>
 			<div class="catalog-container clearfix">
-
+<!-- aside -->
 				<aside class="catalog-filter">
 					<form action="/filter" method="post">
 						<p>Фильтр</p>
-
 						<h3 class="filter-price-title">Цена</h3>
 						<div class="filter-price-box">
 							<div class="filter-price-toggle toggle-min"></div>
@@ -72,7 +71,6 @@
 							<span>-</span>
 							<div class="filter-price-max">30000</div>
 						</div>
-
 						<h3 class="filter-price-title">Производители</h3>
 						<input id="bosch" name="bosch" type="checkbox" value="bosch" checked>
 						<label for="bosch">Bosch</label>
@@ -84,7 +82,6 @@
 						<label for="bosch">Dewalt</label>
 						<input id="hitachi" name="hitachi" type="checkbox" value="hitachi" >
 						<label for="bosch">hitachi</label>
-
 						<h3 class="filter-price-title">Питание:</h3>
 						<input id="battery" name="battery" type="radio" value="battery" checked>
 						<label for="battery">Аккумуляторные</label>
@@ -93,7 +90,7 @@
 						<button class="btn btn-filter" type="submit">Показать</button>
 					</form>
 				</aside>
-
+<!-- main -->
 				<section class="catalog-main">
 					<div class="catalog-sort">
 						<p>Сортировка:</p>
@@ -105,7 +102,6 @@
 							<a href="#" class="arrow-down"></a>
 						</div>
 					</div>
-
 					<div class="catalog-gallery">
 						<article class="item">
 							<a href=""><img src="" alt="BOSCH BFG 3000" width="220" height="320"></a>
@@ -216,20 +212,22 @@
 				</section>
 			</div>
 		</main>
+<!-- about-item -->
 		<div class="about-item">
 			<h2 class="about-item-title container">Пара слов о перфораторах</h2>
 			<p class="about-item-info container">Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.</p>
 			<p class="aobut-item-info">Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор "трехрежимников": водном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
 		</div>
+<!-- footer -->
 		<footer class="main-footer">
 			<div class="footer-top">
 				<a href="#"><img class="main-logo" src="" alt="main-logo" width="220" height="42"></a>
-				<ul calss="footer-top-panel">
-					<li><a href="#">Компания</a></li>
-					<li><a href="#">Новости</a></li>
-					<li><a href="#">Каталог</a></li>
-					<li><a href="#">Доставка</a></li>
-					<li><a href="#">Контакты</a></li>
+				<ul calss="footer-top-menu">
+					<li><a class="menu-item menu-item-bottom" href="#">Компания</a></li>
+					<li><a class="menu-item menu-item-bottom" href="#">Новости</a></li>
+					<li><a class="menu-item menu-item-bottom" href="#">Каталог</a></li>
+					<li><a class="menu-item menu-item-bottom" href="#">Доставка</a></li>
+					<li><a class="menu-item menu-item-bottom" href="#">Контакты</a></li>
 				</ul>
 				<div class="footer-top-address">
 					<p>г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
@@ -262,6 +260,5 @@
 				</div>
 			</div>
 		</footer>
-
 	</body>
 </html>
