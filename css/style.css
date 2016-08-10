@@ -1,0 +1,26 @@
+@font-face {
+	font-family: Cuprum-Regular;
+	src: url(../fonts/Cuprum/Cuprum-Regular.ttf);
+}
+@font-face {
+	font-family: PT Sans;
+	src: url(../fonts/PTSans/PTC55F.ttf);
+}
+body {
+	font-family: "Cuprum-Regular", sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 1.3;
+	color: #000;
+}
+h1 {
+font-size: 30px;
+line-height: 1;
+}
+h2 {
+	font-family: "PT Sans";
+	font-size: 18px;
+	line-height: 1.1;
+	color: #000;
+	font-weight: normal;
+}
