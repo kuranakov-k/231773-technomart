@@ -17,8 +17,14 @@ h2 {
 	color: #000;
 	font-weight: normal;
 }
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
 a {
 	color: #f1f2f4;
+	font-size: 12px;
 }
 .clearfix::after {
 	content: "";
@@ -63,10 +69,15 @@ a {
 }
 .header-info, .header-contact  {
 	width: 300px;
+	height: 75px;
 	margin-right: 20px;
 }
 .header-user {
 	width: 300px;
+	height: 75px;
+}
+.header-user a {
+	color: #49586f;
 }
 .header-bottom ul {
 	list-style: none;
@@ -75,7 +86,15 @@ a {
 .header-bottom {
 	text-align: justify;
 }
+.header-bottom {
+	font-size: 0;
+	background-color: #32425c;
+}
+.footer-top-menu a {
+	color: #000;
+}
 .menu-item {
+	font-size: 14px;
 	display: inline-block;
 	padding: 18px 26px;
 }
@@ -88,6 +107,7 @@ a {
 }
 .offer-item {
 	width: 300px;
+	outline: 1px solid #e5e5e5;
 	margin-bottom: 20px;
 	margin-right: 20px;
 	height: 123px;
@@ -128,9 +148,10 @@ margin-bottom: 20px;
 	outline: 1px solid #e5e5e5;
 	width: 220px;
 	margin-right: 20px;
+	margin-bottom: 20px;
 	float: left;
 }
-.item:last-child {
+.item:nth-child(3n) {
 	margin-right: 0;
 }
 .item-price.invisible {
@@ -149,6 +170,9 @@ margin-bottom: 20px;
 /*====================services====================*/
 .services {
 	background-color: #f2f6f8;
+	background-image: url("../img/car.png");
+	background-repeat: no-repeat;
+	background-position: 940px 190px;
 	padding-top: 67px;
 	padding-bottom: 60px;
 }
@@ -159,6 +183,9 @@ margin-bottom: 20px;
 .services-right-col {
 	width: 280px;
 	float: left;
+}
+.services-list a {
+	background-color: #32425c;
 }
 /*=================company=======================*/
 .company {
@@ -171,7 +198,7 @@ margin-bottom: 20px;
 }
 .company-about {
 	width: 300px;
-	float: left;
+	float: right;
 }
 /*===============footer==============*/
 .main-footer p, .main-footer ul{
@@ -179,18 +206,48 @@ margin-bottom: 20px;
 }
 .footer-top {
 	background-color: #32425c;
+	padding: 30px 0;
+	padding-bottom: 90px;
 }
 .footer-bottom {
 	background-color: #293449;
-}
-.footer-top-address {
-	float: left;
+	padding: 30px 0;
 }
 .footer-item {
 	margin-right: 0;
 	padding-right: 25px;
 }
+.footer-top-menu {
+	float: right;
+}
 .footer-block {
 	width: 235px;
 	float: left;
+}
+.footer-top-offer {
+	float: right;
+}
+/*======================catalog==================*/
+.catalog-main {
+	margin-bottom: 50px;
+}
+.catalog-sort {
+	background-color: #f7f3ec;
+	width: 700px;
+	margin-bottom: 20px;
+}
+.catalog-sort a {
+	color: #000;
+}
+.catalog-pages {
+	clear: both;
+	padding-top: 30px;
+}
+.catalog-gallery {
+	width: 700px;
+}
+/*=====================about-item===================*/
+.about-item {
+	background-color: #f2f6f8;
+	padding: 60px 0;
 }
