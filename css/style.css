@@ -1211,6 +1211,7 @@ figcaption {
 }
 .footer-block a:active {
 	color: #ee3643;
+	text-decoration: underline;
 }
 .footer-copyright {
 	width: 250px;
@@ -1571,14 +1572,14 @@ figcaption {
 .catalog-sort-price {
 	display: inline-block;
 	vertical-align: top;
-	width: 70px;
+	min-width: 70px;
 	text-align: center;
 	margin-right: 70px;
 }
 .catalog-sort-type {
 	display: inline-block;
 	vertical-align: top;
-	width: 55px;
+	min-width: 55px;
 	text-align: center;
 	margin-right: 63px;
 }
