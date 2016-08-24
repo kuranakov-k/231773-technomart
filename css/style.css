@@ -1518,7 +1518,6 @@ figcaption {
 	margin-bottom: 30px;
 }
 .catalog-sort a {
-	white-space: nowrap;
 	display: inline-block;
 	vertical-align: top;
 	margin-top: 12px;
@@ -1531,6 +1530,7 @@ figcaption {
 	text-transform: uppercase;
 	border-bottom: 1px dotted #ee3643;
 }
+.catalog-sort
 .catalog-sort-type a:hover,
 .catalog-sort-function a:hover{
 	color: #000;
@@ -1585,7 +1585,6 @@ figcaption {
 .catalog-sort-function {
 	display: inline-block;
 	vertical-align: top;
-	width: 115px;
 	text-align: center;
 }
 .catalog-sort a.arrow-up {
