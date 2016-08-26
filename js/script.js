@@ -19,7 +19,7 @@ var showMap = document.querySelector(".company-map");
 var mapPopup = document.querySelector(".modal-map");
 var closeMap = document.querySelector(".map-close");
 
-var form = feedbackPopup.querySelector("form");
+var modalForm = feedbackPopup.querySelector("form");
 
 var overlay = document.querySelector(".modal-overlay");
 
@@ -62,35 +62,31 @@ closeMap.addEventListener("click", function(event) {
 	overlay.classList.remove("modal-content-show");
 });
 
-form.addEventListener("submit", function(event) {
+modalForm.addEventListener("submit", function(event) {
 	event.preventDefault();
-	if (nameFeedback.value) {
-		localStorage.setItem("name", nameFeedback.value);
-	}
-	else {
-		console.log("Введите имя");
-		nameFeedback.classList.add("modal-error");
-	};
-	if (mailFeedback.value) {
-		localStorage.setItem("mail", mailFeedback.value)
-	}
-	else {
-		console.log("Введите e-mail");
-	};
+	// if (!nameFeedback.value || !mailFeedback.value) {
+	// 	feedbackPopup.classList.add("modal-error");
+	// 	console.log("ytn");
+	// }
+	// else {
+	// 	localStorage.setItem("name", nameFeedback.value);
+	// 	localStorage.setItem("mail", mailFeedback.value);
+	// 	console.log("ytn");
+	// }
+	console.log("qwe");
 });
-
-// window.addEventListener("keydown", function(event) {
-// 	if (event.keyCode = 27) {
-// 			if (feedbackPopup.classList.contains("modal-content-show") || mapPopup.classList.contains("modal-content-show")) {
-// 				feedbackPopup.classList.remove("modal-content-show");
-// 				mapPopup.classList.remove("modal-content-show");
-// 				overlay.classList.remove("modal-content-show");
-// 			}
-// 			else {
-// 				console.log("pop-up windows is not poped up");
-// 			}
-// 	}
-// });
+window.addEventListener("keydown", function(event) {
+	if (event.keyCode === 27) {
+			if (feedbackPopup.classList.contains("modal-content-show") || mapPopup.classList.contains("modal-content-show")) {
+				feedbackPopup.classList.remove("modal-content-show");
+				mapPopup.classList.remove("modal-content-show");
+				overlay.classList.remove("modal-content-show");
+			}
+			else {
+				console.log("pop-up windows is not poped up");
+			}
+	}
+});
 guaranteeButton.addEventListener("click", function() {
 	event.preventDefault();
 	services.classList.remove("services-delivery");
