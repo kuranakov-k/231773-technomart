@@ -642,6 +642,26 @@ a {
 	height: 266px;
 	background: #aaa;
 }
+.slider-left {
+	position: absolute;
+	top: 50%;
+	left: 24px;
+	margin-top: -20px;
+	width: 22px;
+	height: 40px;
+	background: url("../img/slider-left.png");
+	z-index: 1000;
+}
+.slider-right {
+	position: absolute;
+	top: 50%;
+	right: 24px;
+	margin-top: -20px;
+	width: 22px;
+	height: 40px;
+	background: url("../img/slider-right.png");
+	z-index: 1000;
+}
 .slider input[type=radio] {
 	opacity: 0;
 }
