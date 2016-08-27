@@ -1785,20 +1785,26 @@ a {
 	margin-bottom: 100px;
 	margin-top: 50px;
 }
+.modal-write-us input[type=text] {
+	max-width: 188px;
+	padding: 0px 14px;
+}
+.modal-write-us textarea {
+	padding: 9px 14px;
+	padding-left: 14px;
+	box-sizing: border-box;
+}
 .modal-write-us ::-webkit-input-placeholder {
-	padding: 5px 14px;
 	font-family: "PT Sans", Tahoma, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 }
 .modal-write-us :-moz-placeholder{
-	padding: 5px 14px;
 	font-family: "PT Sans", Tahoma, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 }
 .modal-write-us :-ms-input-placeholder {
-	padding: 5px 14px;
 	font-family: "PT Sans", Tahoma, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
