@@ -64,15 +64,6 @@ closeMap.addEventListener("click", function(event) {
 
 modalForm.addEventListener("submit", function(event) {
 	event.preventDefault();
-	// if (!nameFeedback.value || !mailFeedback.value) {
-	// 	feedbackPopup.classList.add("modal-error");
-	// 	console.log("ytn");
-	// }
-	// else {
-	// 	localStorage.setItem("name", nameFeedback.value);
-	// 	localStorage.setItem("mail", mailFeedback.value);
-	// 	console.log("ytn");
-	// }
 	console.log("qwe");
 });
 window.addEventListener("keydown", function(event) {
