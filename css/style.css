@@ -292,7 +292,7 @@ a {
 	margin: 0;
 	padding: 0;
 }
-.header-title {
+.header-block .header-title {
 	display: block;
 	padding: 0 50px;
 	font-family: "Cuprum", Tahoma, sans-serif;
