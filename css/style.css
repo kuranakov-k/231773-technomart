@@ -69,16 +69,16 @@ a {
 }
 .header-logo {
 	display: inline-block;
- box-sizing: border-box;
-	text-align: center;
 	vertical-align: top;
+ 	box-sizing: border-box;
+	text-align: center;
 	width: 220px;
 	height: 47px;
 	padding-top: 12px;
 	background-color: #ee3643;
 	text-transform: uppercase;
 	border-bottom: 5px solid #b52933;
-	border-top: px solid #e03643;
+	border-top: 1px solid #e03643;
 	text-align: center;
 	font-size: 24px;
 	line-height: 24px;
@@ -90,18 +90,20 @@ a {
 	background-color: #ba2732;
 }
 .header-search {
-	font-size: 17px;
 	position: relative;
 	display: inline-block;
- box-sizing: border-box;
+	vertical-align: top;
+ 	box-sizing: border-box;
 	width: 270px;
+	font-size: 17px;
 }
 .header-search input {
 	padding: 0;
 	display: inline-block;
+	vertical-align: top;
 	width: 270px;
 	height: 42px;
- box-sizing: border-box;
+ 	box-sizing: border-box;
 	padding-left: 49px;
 	background-color: #293449;
 	padding-top: 12px;
@@ -175,7 +177,6 @@ a {
 	display: inline-block;
 	vertical-align: top;
 	width: 150px;
-	height: 42px;
 	line-height: 18px;
 	padding-top: 11px;
 	padding-bottom: 12px;
@@ -250,7 +251,7 @@ a {
 	line-height: 18px;
 	display: inline-block;
 	vertical-align: top;
- box-sizing: border-box;
+ 	box-sizing: border-box;
 	padding-top: 11px;
 	padding-bottom: 13px;
 	padding-left: 20px;
@@ -303,11 +304,11 @@ a {
 }
 .header-phone {
 	position: relative;
- box-sizing: border-box;
+    box-sizing: border-box;
 	width: 270px;
 	padding-left: 70px;
 	padding-right: 46px;
-	padding-top: 9.5px;
+	padding-top: 10px;
 	padding-bottom: 11px;
 	margin-top: 2px;
 	margin-bottom: 9px;
@@ -351,6 +352,7 @@ a {
 }
 .header-user-personal li {
 	display: inline-block;
+	vertical-align: top;
 }
 .personal-orders {
 	position: relative;
@@ -381,7 +383,9 @@ a {
 }
 .btn-login {
 	position: relative;
- box-sizing: border-box;
+	display: inline-block;
+	vertical-align: top;
+ 	box-sizing: border-box;
 	font-size: 21px;
 	line-height: 18px;
 	width: 120px;
@@ -391,7 +395,6 @@ a {
 	padding-right: 27px;
 	padding-left: 48px;
 	background-color: #fff;
-	display: inline-block;
 }
 .btn-login:hover {
 	color: #ee3643;
@@ -470,6 +473,8 @@ a {
 }
 .btn-reg {
 	width: 150px;
+	display: inline-block;
+	vertical-align: top;
 	max-height: 45px;
 	padding-top: 14px;
 	padding-bottom: 15px;
@@ -478,9 +483,8 @@ a {
 	margin-left: 10px;
 	font-size: 21px;
 	line-height: 18px;
- box-sizing: border-box;
+ 	box-sizing: border-box;
 	background-color: #fff;
-	display: inline-block;
 }
 .btn-reg:hover {
 	color: #ee3643;
@@ -551,7 +555,7 @@ a {
 	overflow: hidden;
 	position: relative;
 	width: 300px;
- box-sizing: border-box;
+    box-sizing: border-box;
 	padding-left: 25px;
 	margin-bottom: 20px;
 	margin-right: 20px;
@@ -577,13 +581,13 @@ a {
 }
 .offer-item-info {
 	position: relative;
+	display: inline-block;
+	vertical-align: top;
 	margin: 0;
-	padding: 0;
 	font-size: 14px;
 	line-height: 18px;
 	text-transform: uppercase;
 	color: #fff;
-	display: inline-block;
 	width: 135px;
 	border-radius: 5px;
 	text-align: center;
@@ -627,22 +631,24 @@ a {
 .slider-left {
 	position: absolute;
 	top: 50%;
-	left: 24px;
+	left: 25px;
 	margin-top: -20px;
 	width: 22px;
 	height: 40px;
 	background: url("../img/sprite-main.png") -1672px -5px no-repeat;
 	z-index: 1000;
+    cursor: pointer;
 }
 .slider-right {
 	position: absolute;
 	top: 50%;
-	right: 24px;
+	right: 25px;
 	margin-top: -20px;
 	width: 22px;
 	height: 40px;
 	background: url("../img/sprite-main.png") -1704px -5px no-repeat;
 	z-index: 1000;
+    cursor: pointer;
 }
 .slider input[type=radio] {
 	opacity: 0;
@@ -701,6 +707,9 @@ a {
 }
 .slide-text {
 	position: absolute;
+	max-width: 400px;
+	max-height: 100px;
+	overflow: hidden;
 }
 .slider-title {
 	margin: 0;
@@ -727,12 +736,13 @@ a {
 	margin-right: 20px;
 }
 .btn-slider {
-	position: absolute;
-	margin-top: 125px;
-	left: 22px;
-  width: 195px;
-  background-color: #ee3643;
-  z-index: 2;
+    position: absolute;
+    margin-top: 125px;
+    left: 25px;
+    bottom: 25px;
+    width: 195px;
+    background-color: #ee3643;
+    z-index: 2;
 }
 
 .offer-discount {
@@ -764,7 +774,7 @@ a {
 	position: relative;
 	bottom: 38px;
 	right: 24px;
- box-sizing: border-box;
+    box-sizing: border-box;
 	width: 253px;
 }
 .btn-price {
@@ -773,6 +783,7 @@ a {
 	font-size: 17px;
 	line-height: 18px;
 	display: inline-block;
+	vertical-align: top;
 	color: #fff;
 	padding-top: 13px;
 	padding-bottom: 11px;
@@ -793,7 +804,7 @@ a {
 	display: block;
 	position: relative;
 	text-align: center;
- box-sizing: border-box;
+    box-sizing: border-box;
 	border: 1px solid #e5e5e5;
 	width: 220px;
 	height: 318px;
@@ -802,9 +813,7 @@ a {
 	float: left;
 	font-size: 0;
 }
-.item p {
-	margin: 0;
-}
+
 .item:nth-child(4) {
 	float: right;
 	margin-right: 0;
@@ -827,10 +836,10 @@ a {
 	margin-right: 0;
 }
 .item-catalog:hover {
-	box-shadow: 0px 10px 55px -10px #293449;
+	box-shadow: 0 10px 55px -10px #293449;
 }
 .item:hover {
-	box-shadow: 0px 10px 55px -10px #293449;
+	box-shadow: 0 10px 55px -10px #293449;
 }
 .item-buy {
 	position: absolute;
@@ -877,7 +886,7 @@ a {
 	display: inline-block;
 	vertical-align: top;
 	width: 135px;
- box-sizing: border-box;
+    box-sizing: border-box;
 	background-color: #fff;
 	color: #32425c;
 	border: 3px solid #63a63e;
@@ -891,11 +900,16 @@ a {
 	color: #c1c6ce;
 }
 .item-name {
+	display: inline-block;
+	margin: 0 auto;
 	font-family: "PT Sans", Tahoma, sans-serif;
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 20px;
-	margin-bottom: 17px;
+	margin-top: 17px;
+	max-width: 166px;
+	max-height: 40px;
+	overflow: hidden;
 }
 .old-price {
 	font-family: "PT Sans", Tahoma, sans-serif;
@@ -913,7 +927,7 @@ a {
 	font-weight: bold;
 	font-size: 17px;
 	line-height: 17px;
- box-sizing: border-box;
+    box-sizing: border-box;
 	border-radius: 3px;
 	width: 122px;
 }
@@ -921,7 +935,7 @@ a {
 	content: "";
 	position: absolute;
 	right: -39px;
-	top: 0px;
+	top: 0;
 	border: 20px solid transparent;
 	border-left: 20px solid #ee3643;
 }
@@ -934,7 +948,7 @@ a {
 	position: relative;
 	display: block;
 	float: left;
- box-sizing: border-box;
+    box-sizing: border-box;
 	width: 220px;
 	height: 145px;
 	border: 1px solid #e5e5e5;
@@ -949,7 +963,7 @@ a {
 	z-index: 1;
 }
 .item-brand:hover {
-	box-shadow: 0px 10px 55px -10px #293449;
+	box-shadow: 0 10px 55px -10px #293449;
 }
 .item-brand-click:active::before {
 	background-color: #fff;
@@ -984,7 +998,7 @@ a {
 .services-left-col {
 	width: 240px;
 	float: left;
-	margin-right: 70px;
+	margin-right: 81px;
 }
 .services-list {
 	position: relative;
@@ -995,7 +1009,7 @@ a {
 .services-list::before {
 	position: absolute;
 	top: -47px;
-	right: 0px;
+	right: 0;
 	width: 10px;
 	min-height: 272px;
 	content: "";
@@ -1003,17 +1017,23 @@ a {
 }
 .services-list a {
 	display: block;
-	padding-top: 17px;
-	padding-bottom: 19px;
+	padding-top: 15px;
+	padding-bottom: 17px;
 	padding-left: 23px;
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: bold;
 	background-color: #32425c;
 	color: #fff;
 }
 .services-list span {
 	display: block;
-	padding-top: 17px;
-	padding-bottom: 19px;
+	padding-top: 15px;
+	padding-bottom: 17px;
 	padding-left: 23px;
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: bold;
 	background-color: #fff;
 	color: #32425c;
 }
@@ -1032,22 +1052,22 @@ a {
 }
 
 .services-container {
-	width: 620px;
-	height: 267px;
+	width: 609px;
+	height: 288px;
 	float: left;
 }
 
 .services-delivery {
 	background: url("../img/delivery.png") no-repeat;
-	background-position: 152px 0;
+	background-position: 141px 0;
 }
 .services-guarantee {
 	background: url("../img/guarantee.png") no-repeat;
-	background-position: 232px 0px;
+	background-position: 221px 0px;
 }
 .services-credit {
 	background: url("../img/credit.png") no-repeat;
-	background-position: 152px 0;
+	background-position: 141px 0;
 }
 .btn-credit {
 	width: 195px;
@@ -1104,11 +1124,10 @@ a {
 }
 .company-delivery {
  box-sizing: border-box;
-	height: 158px;
 	margin-bottom: 35px;
 }
 .company-delivery p {
-	margin-bottom: 13px;
+	margin-bottom: 18px;
 }
 .company-delivery ul {
 	list-style: none;
@@ -1143,7 +1162,7 @@ a {
 	display: block;
 	width: 300px;
 	height: 158px;
-	margin-bottom: 35px;
+	margin-bottom: 40px;
 }
 /*===============footer==============*/
 .footer-main {
@@ -1163,7 +1182,7 @@ a {
 .footer-logo {
 	display: inline-block;
 	vertical-align: top;
- box-sizing: border-box;
+    box-sizing: border-box;
 	text-align: center;
 	width: 220px;
 	height: 68px;
@@ -1171,8 +1190,7 @@ a {
 	background-color: #ee3643;
 	text-transform: uppercase;
 	border-bottom: 5px solid #b52933;
-	border-top: px solid #e03643;
-	text-align: center;
+	border-top: 1px solid #e03643;
 	font-size: 30px;
 	line-height: 30px;
 	color: #fff;
@@ -1454,7 +1472,6 @@ a {
 	position: absolute;
 	top: 50%;
 	margin-top: -11.5px;
-	margin-top: -11.5px;
 	display: inline-block;
 	vertical-align: top;
 	width: 20px;
@@ -1698,7 +1715,8 @@ a {
 }
 .catalog-pager .btn-pages{
 	display: inline-block;
- box-sizing: border-box;
+	vertical-align: top;
+ 	box-sizing: border-box;
 	margin-right: 10px;
 	font-family: "PT Sans", Tahoma, sans-serif;
 	font-size: 13px;

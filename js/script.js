@@ -18,6 +18,7 @@ var servicesInfo = document.querySelector(".services-container");
 var showMap = document.querySelector(".company-map");
 var mapPopup = document.querySelector(".modal-map");
 var closeMap = document.querySelector(".map-close");
+var closeByShadow = document.querySelector(".modal-overlay");
 
 var modalForm = feedbackPopup.querySelector("form");
 
@@ -62,6 +63,13 @@ closeMap.addEventListener("click", function(event) {
 	overlay.classList.remove("modal-content-show");
 });
 
+closeByShadow.addEventListener("click", function(event) {
+	event.preventDefault();
+	mapPopup.classList.remove("modal-content-show");
+	feedbackPopup.classList.remove("modal-content-show");
+	overlay.classList.remove("modal-content-show");
+});
+
 modalForm.addEventListener("submit", function(event) {
 	event.preventDefault();
 	console.log("qwe");
@@ -90,7 +98,7 @@ guaranteeButton.addEventListener("click", function() {
 	deliveryButton.innerHTML = "<a href='#'>Доставка</a>";
 	creditButton.innerHTML = "<a href='#'>Кредит</a>";
 	servicesInfo.innerHTML = "<h2 class='services-col-title'>Гарантия</h2><p class='services-col-info'>Если купленный у нас товар поломается или заискрит, а так же в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверенными в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>Дом уж восстановите как нибудь сами.</p>";
-})
+});
 
 deliveryButton.addEventListener("click", function() {
 	event.preventDefault();
@@ -104,7 +112,7 @@ deliveryButton.addEventListener("click", function() {
 	guaranteeButton.innerHTML = "<a href='#'>Гарантия</a>";
 	creditButton.innerHTML = "<a href='#'>Кредит</a>";
 	servicesInfo.innerHTML = "<h2 class='services-col-title'>Доставка</h2><p class='services-col-info'>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>";
-})
+});
 
 creditButton.addEventListener("click", function() {
 	event.preventDefault();
@@ -118,4 +126,4 @@ creditButton.addEventListener("click", function() {
 	guaranteeButton.innerHTML = "<a href='#'>Гарантия</a>";
 	deliveryButton.innerHTML = "<a href='#'>Доставка</a>";
 	servicesInfo.innerHTML = "<h2 class='services-col-title'>Кредит</h2><p class='services-col-info'>Залезть в долговую яму стало проще! <br>Кредитные консультанты придут вам на помощь.</p><br><a class='btn btn-credit' href='#'>Оформить заявку</a>";
-})
+});
