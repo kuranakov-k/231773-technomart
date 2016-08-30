@@ -496,14 +496,11 @@ a {
 	font-size: 0;
 	background-color: #32425c;
 }
-.header-bottom ul {
-	padding-left: 0;
-	margin: 0;
-}
+
 .header-menu {
- box-sizing: border-box;
+    padding-left: 26px;
+    box-sizing: border-box;
 	width: 940px;
-	padding: 0;
 	border-bottom: 5px solid #293449;
 	text-align: justify;
 }
@@ -513,19 +510,19 @@ a {
 }
 .header-bottom a {
 	display: block;
- box-sizing: border-box;
+    box-sizing: border-box;
 	font-size: 17px;
 	line-height: 17px;
 	padding: 19px 30px;
 	padding-bottom: 15px;
 	color: #fff;
 }
-.header-menu li:first-child a {
-	padding-left: 52px;
-}
-.header-menu li:last-child a {
-	padding-right: 52px;
-}
+/*.header-menu li:first-child a {*/
+	/*padding-left: 52px;*/
+/*}*/
+/*.header-menu li:last-child a {*/
+	/*padding-right: 52px;*/
+/*}*/
 .header-bottom a:hover {
 	background-color: #293449;
 }
