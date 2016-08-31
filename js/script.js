@@ -1,4 +1,3 @@
-
 var showFeedback = document.querySelector(".btn-feedback");
 var feedbackPopup = document.querySelector(".modal-write-us");
 var closeFeedback = document.querySelector(".feedback-close");
@@ -7,7 +6,11 @@ var mailFeedback = feedbackPopup.querySelector("[name=mail]");
 var letterFeedback = feedbackPopup.querySelector("[name=letter]");
 var storageName = localStorage.getItem("name");
 var storageMail = localStorage.getItem("mail");
-var storageLetter = localStorage.getItem("letter");
+
+var showCart = document.querySelectorAll(".btn-buy");
+var closeCart = document.querySelector(".btn-continue");
+var cartPopup = document.querySelector(".cart");
+var exitCart = document.querySelector(".cart-close")
 
 var services = document.querySelector(".services-container");
 var deliveryButton = document.querySelector(".delivery");
@@ -24,6 +27,21 @@ var modalForm = feedbackPopup.querySelector("form");
 
 var overlay = document.querySelector(".modal-overlay");
 
+var i;
+for (i = 0; i < showCart.length; i++) {
+	showCart[i].addEventListener("click", function(event) {
+		event.preventDefault();
+		cartPopup.classList.add("modal-content-show");
+	});
+}
+exitCart.addEventListener("click", function(event) {
+	event.preventDefault();
+	cartPopup.classList.remove("modal-content-show");
+})
+closeCart.addEventListener("click", function(event) {
+	event.preventDefault();
+	cartPopup.classList.remove("modal-content-show");
+})
 showFeedback.addEventListener("click", function(event) {
 	event.preventDefault();
 	feedbackPopup.classList.add("modal-content-show");
@@ -51,7 +69,6 @@ closeFeedback.addEventListener("click", function(event) {
 	feedbackPopup.classList.remove("modal-content-show");
 	overlay.classList.remove("modal-content-show");
 });
-
 showMap.addEventListener("click", function(event) {
 	event.preventDefault();
 	mapPopup.classList.add("modal-content-show");
@@ -62,7 +79,6 @@ closeMap.addEventListener("click", function(event) {
 	mapPopup.classList.remove("modal-content-show");
 	overlay.classList.remove("modal-content-show");
 });
-
 closeByShadow.addEventListener("click", function(event) {
 	event.preventDefault();
 	mapPopup.classList.remove("modal-content-show");

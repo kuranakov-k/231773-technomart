@@ -10,10 +10,10 @@
 </head>
 <body>
 <!--header-->
-<header class="main-header">
+<header class="main-header catalog-main-header">
     <div class="header-top clearfix">
         <div class="container clearfix">
-            <a class="header-logo" href="#">Техномарт</a>
+            <a class="header-logo" href="index.html">Техномарт</a>
             <div class="header-search">
                 <form action="/search" method="post">
                     <input type="text" placeholder="Поиск:"><span></span>
@@ -28,7 +28,7 @@
 
         <div class="header-middle clearfix">
             <div class="header-block">
-                <p class="header-title">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта
+                <p class="header-title">Интернет-магазин строительных материалов<br> и инструментов для ремонта
                 </p>
             </div>
             <div class="header-block">
@@ -81,8 +81,8 @@
                 <input id="btn1" name="toggle" type="radio" checked>
                 <input id="btn2" name="toggle" type="radio">
                 <div class="slider-arrows">
-                    <label for="btn1"><div class="slider-left"></div></label>
-                    <label for="btn2"><div class="slider-right"></div></label>
+                    <label for="btn1"><span class="slider-left"></span></label>
+                    <label for="btn2"><span class="slider-right"></span></label>
                 </div>
                 <div class="slider-controls">
                     <label for="btn1"></label>
@@ -123,14 +123,14 @@
         <!--popular-->
         <section class="popular">
             <h2 class="popular-title">Популярные товары</h2>
-            <a class="btn btn-popular" href>Все популярные товары</a>
+            <a class="btn btn-popular" href="#">Все популярные товары</a>
         </section>
         <div class="popular-catalog clearfix">
 
             <article class="item">
                 <img src="img/bosch-bfg-9000.jpg" alt="BOSCH BFG 9000" height="150" width="218">
                 <div class="item-buy">
-                    <a class="btn btn-buy" href="#">Купить</a>
+                    <a class="btn btn-buy" href="cart.html">Купить</a>
                     <a class="btn btn-bookmarks" href="#">В закладки</a>
                 </div>
                 <h2 class="item-name">Перфоратор BOSCH BFG 9000</h2>
@@ -140,7 +140,7 @@
             <article class="item">
                 <img src="img/bosch-bfg-3000.jpg" alt="BOSCH BFG 3000" height="150" width="218">
                 <div class="item-buy">
-                    <a class="btn btn-buy" href="#">Купить</a>
+                    <a class="btn btn-buy" href="cart.html">Купить</a>
                     <a class="btn btn-bookmarks" href="#">В закладки</a>
                 </div>
                 <h2 class="item-name">Перфоратор BOSCH BFG 3000</h2>
@@ -150,7 +150,7 @@
             <article class="item">
                 <img src="img/bosch-bfg-6000.jpg" alt="BOSCH BFG 6000" height="150" width="218">
                 <div class="item-buy">
-                    <a class="btn btn-buy" href="#">Купить</a>
+                    <a class="btn btn-buy" href="cart.html">Купить</a>
                     <a class="btn btn-bookmarks" href="#">В закладки</a>
                 </div>
                 <h2 class="item-name">Перфоратор BOSCH BFG 6000</h2>
@@ -160,13 +160,23 @@
             <article class="item offer-new">
                 <img src="img/bosch-bfg-2000.jpg" alt="BOSCH BFG 2000" height="150" width="218">
                 <div class="item-buy">
-                    <a class="btn btn-buy" href="#">Купить</a>
+                    <a class="btn btn-buy" href="cart.html">Купить</a>
                     <a class="btn btn-bookmarks" href="#">В закладки</a>
                 </div>
                 <h2 class="item-name">Перфоратор BOSCH BFG 2000</h2>
                 <p class="old-price invisible">15000</p>
                 <p class="btn-price">12500 Р.</p>
             </article>
+        </div>
+        <div class="cart">
+            <div class="cart-top">
+                <p>Товар добавлен в корзину!</p>
+            </div>
+            <div class="cart-buttons">
+                <a class="btn btn-purchase" href="index.html">Оформить заказ</a>
+                <a class="btn btn-continue" href="catalog.html">Продолжить покупки</a>
+            </div>
+						<button class="cart-close" type="button"></button>
         </div>
         <section class="popular clearfix">
             <h2 class="popular-title">Популярные производители</h2>
@@ -249,7 +259,7 @@
                     <ul>
                         <li><a href="#">Компания</a></li>
                         <li><a href="#">Новости</a></li>
-                        <li><a href="#">Каталог</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
                         <li><a href="#">Доставка</a></li>
                         <li><a href="#">Контакты</a></li>
                     </ul>
@@ -269,7 +279,7 @@
     <div class="footer-bottom clearfix">
         <div class="container">
             <div class="footer-block footer-copyright">
-                <p>&copy;2010-2016 Компания "Техномарт"</p>
+                <p>&copy; 2010-2016 Компания &laquo;Техномарт&raquo;</p>
                 <p>Все права защищены</p>
             </div>
             <div class="footer-block footer-social">
@@ -282,7 +292,7 @@
                 <a href="#">mail@htmlacademy.ru</a>
             </div>
             <div class="footer-block footer-design">
-                <p>Разработано-</p>
+                <p>Разработано -</p>
                 <a href="https://htmlacademy.ru">htmlacademy.ru</a>
             </div>
         </div>
