@@ -697,6 +697,7 @@ a
 {
     box-sizing: border-box;
     width: 940px;
+    max-height: 56px;
     padding-left: 26px;
 
     text-align: justify;
@@ -718,19 +719,27 @@ a
 
     box-sizing: border-box;
     padding: 19px 30px;
-    padding-bottom: 15px;
+    padding-bottom: 16px;
 
     color: #fff;
 }
-/*.header-menu li:first-child a {*/
-/*padding-left: 52px;*/
-/*}*/
-/*.header-menu li:last-child a {*/
-/*padding-right: 52px;*/
-/*}*/
 .header-bottom a:hover
 {
+    z-index: 5;
+
+    padding-bottom: 16px;
+
+    border-bottom: 4px solid #293449;
     background-color: #293449;
+}
+.header-bottom a:active
+{
+    z-index: 5;
+
+    padding-bottom: 16px;
+
+    border-bottom: 4px solid #1d2739;
+    background-color: #1d2739;
 }
 .header-bottom a:active
 {
@@ -1031,10 +1040,13 @@ a
 {
     font-size: 0;
 
+    position: relative;
+
     box-sizing: border-box;
-    height: 89px;
+    max-height: 200px;
     margin-bottom: 20px;
     padding-top: 33px;
+		padding-bottom: 33px;
 
     background-color: #f7f3ec;
 }
@@ -1044,28 +1056,27 @@ a
     font-size: 30px;
     line-height: 30px;
 
-    overflow: hidden;
-
-    max-width: 620px;
+    max-width: 610px;
+    max-height: 100px;
     margin: 0;
     margin-left: 30px;
     padding: 0;
 
-    white-space: nowrap;
     text-transform: uppercase;
 
     color: #32425c;
 }
 .btn-popular
 {
-    position: relative;
+    position: absolute;
+    top: 50%;
     right: 24px;
-    bottom: 38px;
 
     float: right;
 
     box-sizing: border-box;
     width: 253px;
+    margin-top: -19px;
 }
 
 .invisible
@@ -1090,9 +1101,9 @@ a
 
     box-sizing: border-box;
     width: 220px;
-    height: 318px;
     margin-right: 20px;
     margin-bottom: 20px;
+    padding-bottom: 20px;
 
     text-align: center;
 
@@ -1117,9 +1128,10 @@ a
 
     box-sizing: border-box;
     width: 220px;
-    height: 318px;
+    /*height: 318px;*/
     margin-right: 20px;
     margin-bottom: 20px;
+    padding-bottom: 20px;
 
     text-align: center;
 
@@ -1236,7 +1248,6 @@ a
     overflow: hidden;
 
     max-width: 166px;
-    max-height: 40px;
     margin: 0 auto;
     margin-top: 27px;
 
@@ -1347,6 +1358,10 @@ a
 
     background-color: #f2f6f8;
 }
+.services .wrapper
+{
+    min-height: 520px;
+}
 .services-title
 {
     font-family: 'Cuprum', Tahoma, sans-serif;
@@ -1452,25 +1467,20 @@ a
     float: left;
 
     width: 609px;
-    height: 288px;
+    min-height: 268px;
+    padding-bottom: 20px;
 }
 
 .services-delivery
 {
-    overflow: hidden;
-
     background: url('../img/delivery.png') 141px 0 no-repeat;
 }
 .services-guarantee
 {
-    overflow: hidden;
-
     background: url('../img/guarantee.png') 221px 0 no-repeat;
 }
 .services-credit
 {
-    overflow: hidden;
-
     background: url('../img/credit.png') 141px 0 no-repeat;
 }
 .btn-credit
@@ -2418,8 +2428,9 @@ a
 
     box-sizing: border-box;
     width: 38px;
-    height: 38px;
     margin-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 9px;
 
     vertical-align: top;
 
